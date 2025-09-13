@@ -1,6 +1,7 @@
 import Loader from "./Loader";
 import styles from "./SearchBar.module.css";
 import { FaSearch } from "react-icons/fa";
+import { TbSquareLetterS } from "react-icons/tb";
 const SearchBar = ({ loading, searchValue, handleSearch, clearSearch }) => {
   return (
     <div>
@@ -8,7 +9,7 @@ const SearchBar = ({ loading, searchValue, handleSearch, clearSearch }) => {
         {loading ? <Loader /> : <FaSearch className={styles.icon} />}
         <input
           className={styles.input}
-          type="search"
+          type="input"
           name="search"
           placeholder="Seaching is easier"
           onChange={(e) => handleSearch(e.target.value)}
@@ -19,7 +20,12 @@ const SearchBar = ({ loading, searchValue, handleSearch, clearSearch }) => {
             clear
           </button>
         ) : (
-          <div>quick access</div>
+          <div className={styles.rightContainer}>
+                          <span className={styles.iconS}>
+                              <span className={styles.letter}>S</span>
+                          </span>
+            <span className={styles.text}>quick access</span>
+          </div>
         )}
       </div>
     </div>

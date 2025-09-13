@@ -50,3 +50,31 @@
     cursor: pointer;
     text-decoration: underline;
 }
+.rightContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.iconS{
+    width: 15px;
+    /* border: 1px solid #b10c0c; */
+    /* padding: 0px 1px; */
+    border-bottom: 1px solid #333;
+    border-radius: 4px;
+    /* box-shadow: 1px 2px 4px 0px #333; */
+}
+
+.letter{
+    border: 0.5px solid #333;
+    border-radius: 4px;
+    width: 12px;
+    height: 12px;
+    padding: 0px 2px;
+    box-shadow: 0px 2px 4px 1px #333;
+}
+
+.text{
+    font-size: 18px;
+}
