@@ -1,0 +1,22 @@
+.nosearch{
+    width: 488px;
+    height: 480px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #b61010;
+    text-align: center;
+    align-content: center;
+    animation: pulseText 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseText {
+    0%{
+        opacity: 0.4;
+    }
+     50%{
+        opacity: 1;
+    }
+     100%{
+        opacity: 0.7;
+    }
+}
